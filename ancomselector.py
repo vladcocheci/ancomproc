@@ -70,7 +70,7 @@ def get_data(uat):
     actions.click().perform()
 
     try:
-        a = driver.find_element_by_link_text("aici")
+        a = driver.find_element_by_xpath("//p[contains(text(), 'Pentru lista completă a furnizorilor ce oferă serviciile selectate, apăsaţi ')]/a")
         a.click()
         time.sleep(5)
 
